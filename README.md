@@ -233,8 +233,6 @@ npm run lint
 
 Designed & built with ❤️ by **[Bharath R](https://github.com/RBharath77)**.
 
-[![Created by Bharath R](https://img.shields.io/badge/Created%20by-Bharath%20R-E10600?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RBharath77)
-
 ---
 
 ## 📄 License & Credits
