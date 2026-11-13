@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="220" style="background: transparent;">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b10" />
+      <stop offset="50%" stop-color="#12131c" />
+      <stop offset="100%" stop-color="#07080c" />
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e10600" />
+      <stop offset="50%" stop-color="#ff3b30" />
+      <stop offset="100%" stop-color="#e10600" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e10600" stop-opacity="0" />
+      <stop offset="30%" stop-color="#e10600" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      @keyframes revCycle {
+        0%, 100% { fill-opacity: 0.2; }
+        15% { fill-opacity: 1; }
+        50% { fill-opacity: 1; }
+        75% { fill-opacity: 0.3; }
+      }
+      @keyframes speedDash {
+        0% { transform: translateX(-300px); opacity: 0; }
+        20% { opacity: 0.8; }
+        80% { opacity: 0.8; }
+        100% { transform: translateX(950px); opacity: 0; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { filter: drop-shadow(0 0 8px rgba(225, 6, 0, 0.4)); }
+        50% { filter: drop-shadow(0 0 18px rgba(225, 6, 0, 0.85)); }
+      }
+      @keyframes telemetryFlow {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes shiftBlink {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+      .telemetry-path {
+        stroke-dasharray: 400;
+        animation: telemetryFlow 3s linear infinite;
+      }
+      .f1-brand {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.14em;
+        animation: pulseGlow 2.5s ease-in-out infinite;
+      }
+      .dash-1 { animation: speedDash 2.4s ease-in infinite; }
+      .dash-2 { animation: speedDash 3.1s ease-in infinite 0.7s; }
+      .dash-3 { animation: speedDash 2.8s ease-in infinite 1.3s; }
+      .shift-light { animation: shiftBlink 0.6s infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Frame -->
+  <rect x="2" y="2" width="896" height="216" rx="14" fill="url(#bg)" stroke="#262838" stroke-width="2"/>
+  <rect x="2" y="2" width="896" height="4" rx="2" fill="url(#redGlow)"/>
+
+  <!-- Speed Dashes -->
+  <g opacity="0.4">
+    <line class="dash-1" x1="0" y1="40" x2="160" y2="40" stroke="#e10600" stroke-width="2" stroke-linecap="round"/>
+    <line class="dash-2" x1="0" y1="180" x2="220" y2="180" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+    <line class="dash-3" x1="0" y1="110" x2="120" y2="110" stroke="#ffffff" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Formula 1 Corner Chevron Accent -->
+  <path d="M 830 30 L 860 30 L 845 55 L 815 55 Z" fill="#e10600" opacity="0.85"/>
+  <path d="M 850 30 L 880 30 L 865 55 L 835 55 Z" fill="#ffffff" opacity="0.4"/>
+
+  <!-- LED Rev Light Bar (F1 Steering Wheel Style) -->
+  <g transform="translate(280, 26)">
+    <!-- Green LEDs -->
+    <rect x="0" y="0" width="16" height="8" rx="2" fill="#22c55e" style="animation: revCycle 1.6s infinite 0.1s;"/>
+    <rect x="22" y="0" width="16" height="8" rx="2" fill="#22c55e" style="animation: revCycle 1.6s infinite 0.2s;"/>
+    <rect x="44" y="0" width="16" height="8" rx="2" fill="#22c55e" style="animation: revCycle 1.6s infinite 0.3s;"/>
+    <rect x="66" y="0" width="16" height="8" rx="2" fill="#22c55e" style="animation: revCycle 1.6s infinite 0.4s;"/>
+
+    <!-- Red LEDs -->
+    <rect x="94" y="0" width="16" height="8" rx="2" fill="#ef4444" style="animation: revCycle 1.6s infinite 0.5s;"/>
+    <rect x="116" y="0" width="16" height="8" rx="2" fill="#ef4444" style="animation: revCycle 1.6s infinite 0.6s;"/>
+    <rect x="138" y="0" width="16" height="8" rx="2" fill="#ef4444" style="animation: revCycle 1.6s infinite 0.7s;"/>
+    <rect x="160" y="0" width="16" height="8" rx="2" fill="#ef4444" style="animation: revCycle 1.6s infinite 0.8s;"/>
+
+    <!-- Blue / Purple LEDs (Shift zone) -->
+    <rect x="188" y="0" width="16" height="8" rx="2" fill="#3b82f6" style="animation: revCycle 1.6s infinite 0.9s;"/>
+    <rect x="210" y="0" width="16" height="8" rx="2" fill="#3b82f6" style="animation: revCycle 1.6s infinite 1.0s;"/>
+    <rect x="232" y="0" width="16" height="8" rx="2" fill="#a855f7" class="shift-light"/>
+    <rect x="254" y="0" width="16" height="8" rx="2" fill="#a855f7" class="shift-light"/>
+  </g>
+
+  <!-- FIA Red Pill Badge -->
+  <g transform="translate(45, 36)">
+    <rect x="0" y="0" width="130" height="24" rx="4" fill="#e10600"/>
+    <text x="65" y="16" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="900" letter-spacing="2" text-anchor="middle">FORMULA 1</text>
+  </g>
+
+  <!-- Live Telemetry Status Pill -->
+  <g transform="translate(185, 36)">
+    <rect x="0" y="0" width="80" height="24" rx="4" fill="rgba(34, 197, 94, 0.16)" stroke="#22c55e" stroke-width="1"/>
+    <circle cx="12" cy="12" r="4" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite" />
+    </circle>
+    <text x="46" y="16" fill="#22c55e" font-family="monospace" font-size="10" font-weight="800" letter-spacing="1.5" text-anchor="middle">LIVE</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="45" y="112" class="f1-brand" fill="#ffffff" font-size="34">F1 FANVERSE FOUNDATION</text>
+  <text x="45" y="138" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600" letter-spacing="0.08em">
+    2026 NEXT-GEN DIGITAL RACE EXPERIENCE • REAL-TIME TELEMETRY • 3D COCKPIT
+  </text>
+
+  <!-- Telemetry Sparkline -->
+  <path class="telemetry-path" d="M 45 180 L 150 180 L 180 155 L 220 195 L 260 165 L 310 180 L 440 180" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Live Stats Capsules Right Side -->
+  <g transform="translate(560, 95)">
+    <!-- Speed Box -->
+    <rect x="0" y="0" width="95" height="52" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="47" y="20" fill="#94a3b8" font-family="monospace" font-size="9" font-weight="700" letter-spacing="1" text-anchor="middle">TOP SPEED</text>
+    <text x="47" y="42" fill="#ffffff" font-family="monospace" font-size="18" font-weight="900" text-anchor="middle">352 <tspan font-size="10" fill="#e10600">KM/H</tspan></text>
+
+    <!-- Gear Box -->
+    <rect x="105" y="0" width="75" height="52" rx="8" fill="rgba(225,6,0,0.12)" stroke="rgba(225,6,0,0.5)"/>
+    <text x="142" y="20" fill="#ff6b6b" font-family="monospace" font-size="9" font-weight="700" letter-spacing="1" text-anchor="middle">GEAR</text>
+    <text x="142" y="42" fill="#ffffff" font-family="monospace" font-size="20" font-weight="900" text-anchor="middle">8</text>
+
+    <!-- DRS Box -->
+    <rect x="190" y="0" width="105" height="52" rx="8" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.4)"/>
+    <text x="242" y="20" fill="#4ade80" font-family="monospace" font-size="9" font-weight="700" letter-spacing="1" text-anchor="middle">DRS STATUS</text>
+    <text x="242" y="42" fill="#22c55e" font-family="monospace" font-size="14" font-weight="900" text-anchor="middle">ENABLED ⚡</text>
+  </g>
+
+  <!-- Bottom Metric Ticker -->
+  <g transform="translate(45, 202)">
+    <text fill="#64748b" font-family="monospace" font-size="10" letter-spacing="1.5">
+      ROUND 21 // LAS VEGAS GP • FIA OFFICIAL DATA SYNC • NEXT.JS 15 • THREE.JS • 11 TEAMS • 22 DRIVERS
+    </text>
+  </g>
+</svg>
