@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-brand">
         <strong>
-          <span className="brand-badge">F1</span> FANVERSE
+          <span className="brand-badge">APEX</span> ORA
         </strong>
         <span>BUILT FOR THE FANS. BUILT FOR THE LOVE OF RACING.</span>
       </div>
@@ -25,7 +25,7 @@ export default function Footer() {
           BACK TO GRID ↑
         </a>
         <p suppressHydrationWarning>
-          © {new Date().getFullYear()} F1 FANVERSE • Created by Bharath R
+          © {new Date().getFullYear()} APEXORA • Created by Bharath R
         </p>
       </div>
     </footer>

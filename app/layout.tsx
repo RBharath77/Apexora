@@ -11,9 +11,9 @@ import { FavoritesProvider } from "../lib/favorites";
 import { LiveDataProvider } from "../lib/live-data";
 
 export const metadata: Metadata = {
-  title: "F1 FANVERSE | 2026 Interactive Formula 1 Experience",
+  title: "APEXORA | 2026 Interactive Formula 1 Experience",
   description:
-    "2026 Formula 1 standings, live race countdown & weather forecasts, 3D garage inspector, interactive world circuits, and fan zone.",
+    "APEXORA — Next-gen 2026 Formula 1 standings, live race countdown & weather forecasts, 3D cockpit & garage inspector, interactive world circuits, and fan zone.",
 };
 
 export default function RootLayout({

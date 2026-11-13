@@ -1,14 +1,15 @@
 <p align="center">
-  <img src="public/images/readme-banner.svg" alt="F1 Fanverse Telemetry Banner" width="100%" />
+  <img src="public/images/readme-banner.svg" alt="Apexora Telemetry Banner" width="100%" />
 </p>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=22&duration=2500&pause=1000&color=E10600&center=true&vCenter=true&width=750&height=48&lines=FORMULA+1+%E2%80%A2+2026+DIGITAL+COMMAND+CENTER;REAL-TIME+FIA+RACE+RESULTS+%26+LIVE+TELEMETRY;INTERACTIVE+3D+COCKPIT+%26+DRIVING+CONSOLE;AUTOMATIC+WEATHER+%26+STRATEGY+PREDICTIONS;11+TEAMS+%E2%80%A2+22+DRIVERS+%E2%80%A2+FULL+2026+GRID;ZERO-ASSET+BLOAT+%E2%80%A2+PROCEDURAL+60+FPS+WEBGL" alt="Typing Headline" />
+    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=22&duration=2500&pause=1000&color=E10600&center=true&vCenter=true&width=750&height=48&lines=APEXORA+%E2%80%A2+2026+FORMULA+1+COMMAND+CENTER;REAL-TIME+FIA+RACE+RESULTS+%26+LIVE+TELEMETRY;INTERACTIVE+3D+COCKPIT+%26+DRIVING+CONSOLE;AUTOMATIC+WEATHER+%26+STRATEGY+PREDICTIONS;11+TEAMS+%E2%80%A2+22+DRIVERS+%E2%80%A2+FULL+2026+GRID;ZERO-ASSET+BLOAT+%E2%80%A2+PROCEDURAL+60+FPS+WEBGL" alt="Typing Headline" />
   </a>
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/APEXORA-2026-E10600?style=for-the-badge&logo=formula1&logoColor=white" alt="Apexora" />
   <img src="https://img.shields.io/badge/Next.js%2015-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript%205-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -23,12 +24,12 @@
 ## 🏁 Live Circuit Telemetry & Sector Splits
 
 <p align="center">
-  <img src="public/images/readme-circuit-telemetry.svg" alt="F1 Circuit Live Telemetry" width="100%" />
+  <img src="public/images/readme-circuit-telemetry.svg" alt="Apexora Circuit Live Telemetry" width="100%" />
 </p>
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ⚡ FIA TELEMETRY MARQUEE TICKER                                                                 │
+│  ⚡ APEXORA FIA TELEMETRY MARQUEE TICKER                                                         │
 │  LAST GP WINNER : L. NORRIS (MCLAREN #1 • 1:35:23.504 • INTERLAGOS)                              │
 │  NEXT GRAND PRIX: ROUND 21 // LAS VEGAS GRAND PRIX (NOV 20 - NOV 22, 2026)                       │
 │  SESSIONS SYNC  : FP1 00:30 UTC • FP2 04:00 UTC • FP3 00:30 UTC • QUALI 04:00 UTC • RACE 04:00 UTC │
@@ -38,11 +39,11 @@
 
 ---
 
-## 🏎️ About F1 Fanverse Foundation
+## 🏎️ About APEXORA
 
-**F1 Fanverse Foundation** is an open, high-performance, ad-free digital command center celebrating the speed, aerodynamics, and engineering marvel of **Formula 1's 2026 Season**.
+**APEXORA** is an open, high-performance, ad-free digital command center celebrating the speed, aerodynamics, and engineering marvel of **Formula 1's 2026 Season**.
 
-Unlike traditional websites with heavy downloads and static pages, F1 Fanverse provides:
+Unlike traditional websites with heavy downloads and static pages, **APEXORA** provides:
 * **Zero Asset Bloat:** Full procedural 3D car models (67 meshes / 23,044 triangles per car) built directly in code without downloading heavy 50MB 3D files.
 * **Automated Official Data Sync:** Automatic parallel background polling of official FIA Jolpica Ergast endpoints for classifications, podium results, DHL fastest laps, and upcoming session schedules.
 * **True Driver Cockpit Feel:** Real-time steering wheel HUD, rev LEDs, gear indicators, active DRS flap animation, and procedural synthesized engine audio.
@@ -178,8 +179,8 @@ flowchart TD
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/RBharath77/f1-fanverse-foundation.git
-cd f1-fanverse-foundation
+git clone https://github.com/RBharath77/apexora.git
+cd apexora
 npm install
 ```
 

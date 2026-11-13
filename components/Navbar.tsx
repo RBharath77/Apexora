@@ -70,8 +70,8 @@ export default function Navbar() {
           setMenuOpen(false);
         }}
       >
-        <span className="brand-badge">F1</span>
-        <span>FANVERSE</span>
+        <span className="brand-badge">APEX</span>
+        <span>ORA</span>
       </a>
 
       <nav className="desktop-nav" aria-label="Primary navigation">

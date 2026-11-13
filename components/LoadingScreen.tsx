@@ -139,7 +139,7 @@ export default function LoadingScreen() {
       className={`loading-screen ${exiting ? "is-exiting" : ""} ${
         lightsOut ? "is-lights-out" : ""
       }`}
-      aria-label="F1 Fanverse Race Start Sequence"
+      aria-label="APEXORA Race Start Sequence"
       role="status"
     >
       {/* Background Atmosphere: Spotlight Flare & Grid Straight */}
@@ -149,7 +149,7 @@ export default function LoadingScreen() {
       {/* Top Telemetry Eyebrow */}
       <div className="loading-eyebrow-bar" aria-hidden="true">
         <span className="eyebrow-beacon" />
-        <span>FIA FORMULA 1 WORLD CHAMPIONSHIP™ {"//"} 2026 SEASON OPENER</span>
+        <span>APEXORA // FIA FORMULA 1 WORLD CHAMPIONSHIP™ // 2026</span>
       </div>
 
       {/* Main Start Gantry with 5 pods */}
@@ -185,8 +185,8 @@ export default function LoadingScreen() {
       {/* Center Cluster with Title & Animated Progress */}
       <div className="loading-center-cluster">
         <div className="loading-mark">
-          <span className="mark-f1">F1</span>
-          <span className="mark-text">FANVERSE</span>
+          <span className="mark-f1">APEX</span>
+          <span className="mark-text">ORA</span>
           <em className="mark-year">2026</em>
         </div>
 

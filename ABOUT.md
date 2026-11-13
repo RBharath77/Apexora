@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="public/images/readme-banner.svg" alt="F1 Fanverse Telemetry Banner" width="100%" />
+  <img src="public/images/readme-banner.svg" alt="Apexora Telemetry Banner" width="100%" />
 </p>
 
-# 🏎️ About F1 Fanverse Foundation
+# 🏎️ About APEXORA
 
 > **"Built for the fans. Built for the love of racing."**  
 > An open, high-performance, ad-free digital command center celebrating the speed, aerodynamics, and engineering marvel of Formula 1.
@@ -13,7 +13,7 @@
 
 Formula 1 is the pinnacle of global motorsport—a theater where millisecond software decisions and aerodynamic precision meet extreme human courage. Yet, mainstream digital experiences are frequently burdened by heavy paywalls, intrusive advertisements, or laggy interfaces.
 
-**F1 Fanverse Foundation** was conceived with a singular engineering philosophy:
+**APEXORA** was conceived with a singular engineering philosophy:
 1. **Zero Asset Bloat:** Deliver full, interactive 3D Formula 1 cars with authentic liveries and driver numbers using procedural Three.js geometry without downloading heavy 50MB 3D meshes.
 2. **Automated Live Sync:** Seamlessly integrate official FIA Jolpica Ergast race results, DHL fastest lap records, driver/constructor standings, and Open-Meteo track temperatures with automatic local timezone session conversions.
 3. **True Driver Cockpit Feel:** Offer an interactive driving console featuring realistic cockpit/T-cam onboard views, active DRS wing manipulation, and synthesized real-time V6 turbo engine audio.
@@ -94,7 +94,7 @@ flowchart TD
 
 ## 🎧 Audio Engineering: Procedural V6 Synthesizer
 
-Rather than looping recorded MP3 samples which suffer from audible boundary clicks and unnatural pitch stepping, F1 Fanverse utilizes a custom **Web Audio API Multi-Oscillator FM Synthesizer**:
+Rather than looping recorded MP3 samples which suffer from audible boundary clicks and unnatural pitch stepping, **APEXORA** utilizes a custom **Web Audio API Multi-Oscillator FM Synthesizer**:
 * **Fundamental Tone:** Sawtooth oscillator mapped to engine RPM ($4,000 - 15,000\text{ RPM}$).
 * **Sub-Harmonic Exhaust Rumble:** Square wave oscillator with low-pass resonance filter mimicking cylinder firing order pulses.
 * **Turbo Whine:** High-frequency sine wave oscillator tied directly to throttle pedal load ($0\% - 100\%$).
@@ -116,8 +116,8 @@ Rather than looping recorded MP3 samples which suffer from audible boundary clic
 Found a bug, want to add telemetry metrics, or suggest a new camera angle? Contributions are warmly welcomed:
 
 ```bash
-git clone https://github.com/RBharath77/f1-fanverse-foundation.git
-cd f1-fanverse-foundation
+git clone https://github.com/RBharath77/apexora.git
+cd apexora
 npm install
 npm run dev
 ```
@@ -125,7 +125,7 @@ npm run dev
 ---
 
 ## 👨‍💻 Creator
-**F1 Fanverse Foundation** was architected and created by **[Bharath R](https://github.com/RBharath77)**.
+**APEXORA** was architected and created by **[Bharath R](https://github.com/RBharath77)**.
 
 *Formula 1, F1, and related trademarks belong to Formula One Licensing B.V. This site is created for educational and fan community enjoyment.*
 

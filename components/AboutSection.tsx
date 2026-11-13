@@ -72,7 +72,7 @@ export default function AboutSection() {
         <SectionTitle
           number="09"
           eyebrow="THE MISSION & ARCHITECTURE"
-          title="ABOUT F1 FANVERSE"
+          title="ABOUT APEXORA"
           subtitle="A premier digital paddock combining real-time FIA telemetrics, procedural 3D WebGL car physics, and next-generation 2026 technical regulations."
         />
 
@@ -151,7 +151,7 @@ export default function AboutSection() {
             <span className="creed-badge">🏎️ RACING COMMUNITY HERITAGE</span>
             <h4>BUILT BY MOTORSPORT PURISTS FOR F1 FANS</h4>
             <p>
-              F1 Fanverse Foundation was crafted to give Formula 1 supporters an uncompromised, ad-free, high-speed telemetry terminal. From the driver reaction trainer to real-time session timetables and 3D aerodynamic chassis inspections, this portal celebrates the pinnacle of human and mechanical speed.
+              APEXORA was crafted to give Formula 1 supporters an uncompromised, ad-free, high-speed telemetry terminal. From the driver reaction trainer to real-time session timetables and 3D aerodynamic chassis inspections, this portal celebrates the pinnacle of human and mechanical speed.
             </p>
           </div>
           <div className="creed-meta">

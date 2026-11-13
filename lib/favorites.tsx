@@ -39,7 +39,9 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     try {
-      const saved = window.localStorage.getItem("f1-fanverse-favorites-2026");
+      const saved =
+        window.localStorage.getItem("apexora-favorites-2026") ||
+        window.localStorage.getItem("f1-fanverse-favorites-2026");
       if (saved) {
         const parsed = JSON.parse(saved) as Partial<FavoritesState>;
         setFavorites((prev) => ({ ...prev, ...parsed }));
@@ -52,7 +54,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   const persist = useCallback((next: FavoritesState) => {
     try {
       window.localStorage.setItem(
-        "f1-fanverse-favorites-2026",
+        "apexora-favorites-2026",
         JSON.stringify(next)
       );
     } catch {
