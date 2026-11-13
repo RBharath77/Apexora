@@ -122,4 +122,10 @@ npm install
 npm run dev
 ```
 
+---
+
+## 👨‍💻 Creator
+**F1 Fanverse Foundation** was architected and created by **[Bharath R](https://github.com/RBharath77)**.
+
 *Formula 1, F1, and related trademarks belong to Formula One Licensing B.V. This site is created for educational and fan community enjoyment.*
+

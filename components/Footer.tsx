@@ -24,7 +24,9 @@ export default function Footer() {
         <a href="#home" className="back-to-top">
           BACK TO GRID ↑
         </a>
-        <p suppressHydrationWarning>© {new Date().getFullYear()} F1 FANVERSE</p>
+        <p suppressHydrationWarning>
+          © {new Date().getFullYear()} F1 FANVERSE • Created by Bharath R
+        </p>
       </div>
     </footer>
   );

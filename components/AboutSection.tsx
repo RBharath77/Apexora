@@ -156,6 +156,10 @@ export default function AboutSection() {
           </div>
           <div className="creed-meta">
             <div className="meta-capsule">
+              <span>CREATED BY</span>
+              <strong>BHARATH R</strong>
+            </div>
+            <div className="meta-capsule">
               <span>VERSION</span>
               <strong>2026.1.0</strong>
             </div>
