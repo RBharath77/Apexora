@@ -30,12 +30,6 @@
         50% { fill-opacity: 1; }
         75% { fill-opacity: 0.3; }
       }
-      @keyframes speedDash {
-        0% { transform: translateX(-300px); opacity: 0; }
-        20% { opacity: 0.8; }
-        80% { opacity: 0.8; }
-        100% { transform: translateX(950px); opacity: 0; }
-      }
       @keyframes pulseGlow {
         0%, 100% { filter: drop-shadow(0 0 8px rgba(225, 6, 0, 0.4)); }
         50% { filter: drop-shadow(0 0 18px rgba(225, 6, 0, 0.85)); }
@@ -58,9 +52,6 @@
         letter-spacing: 0.16em;
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
-      .dash-1 { animation: speedDash 2.4s ease-in infinite; }
-      .dash-2 { animation: speedDash 3.1s ease-in infinite 0.7s; }
-      .dash-3 { animation: speedDash 2.8s ease-in infinite 1.3s; }
       .shift-light { animation: shiftBlink 0.6s infinite; }
     </style>
   </defs>
@@ -68,13 +59,6 @@
   <!-- Background Frame -->
   <rect x="2" y="2" width="896" height="226" rx="14" fill="url(#bg)" stroke="#262838" stroke-width="2"/>
   <rect x="2" y="2" width="896" height="4" rx="2" fill="url(#redGlow)"/>
-
-  <!-- Speed Dashes -->
-  <g opacity="0.4">
-    <line class="dash-1" x1="0" y1="40" x2="160" y2="40" stroke="#e10600" stroke-width="2" stroke-linecap="round"/>
-    <line class="dash-2" x1="0" y1="180" x2="220" y2="180" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
-    <line class="dash-3" x1="0" y1="110" x2="120" y2="110" stroke="#ffffff" stroke-width="1" stroke-linecap="round"/>
-  </g>
 
   <!-- Formula 1 Corner Chevron Accent -->
   <path d="M 830 30 L 860 30 L 845 55 L 815 55 Z" fill="#e10600" opacity="0.85"/>
@@ -116,41 +100,41 @@
     <text x="44" y="16" fill="#22c55e" font-family="monospace" font-size="10" font-weight="800" letter-spacing="1.5" text-anchor="middle">LIVE</text>
   </g>
 
-  <!-- Main Hero Brand Title (Left Side, max width 480) -->
+  <!-- Main Hero Brand Title (Left Side, strictly isolated from right side) -->
   <text x="45" y="100" class="f1-brand" fill="#ffffff" font-size="34">APEXORA</text>
   
-  <!-- Subtitle Line 1 (Kept cleanly on left, width ~320px) -->
+  <!-- Subtitle Line 1 -->
   <text x="45" y="126" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" letter-spacing="0.1em">
     FORMULA 1 2026 // DIGITAL COMMAND CENTER
   </text>
   
-  <!-- Subtitle Line 2 (Kept cleanly on left, width ~310px) -->
+  <!-- Subtitle Line 2 -->
   <text x="45" y="146" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" letter-spacing="0.08em">
     REAL-TIME TELEMETRY • PROCEDURAL 3D COCKPIT
   </text>
 
-  <!-- Telemetry Sparkline (Left Side, confined to x=45 to x=460) -->
+  <!-- Telemetry Sparkline (Left Side, ends at x=460) -->
   <path class="telemetry-path" d="M 45 174 L 140 174 L 168 152 L 202 188 L 235 158 L 270 174 L 460 174" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Live Stats Capsules Right Side (Starts at x=560, strictly isolated from text on left) -->
+  <!-- Live Stats Capsules Right Side (Starts at x=560, solid opaque cards) -->
   <g transform="translate(560, 80)">
-    <!-- Speed Box -->
-    <rect x="0" y="0" width="100" height="56" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+    <!-- Speed Box (Solid dark background, no see-through lines) -->
+    <rect x="0" y="0" width="100" height="56" rx="8" fill="#11131c" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
     <text x="50" y="20" fill="#94a3b8" font-family="monospace" font-size="9" font-weight="700" letter-spacing="1" text-anchor="middle">TOP SPEED</text>
     <text x="50" y="44" fill="#ffffff" font-family="monospace" font-size="17" font-weight="900" text-anchor="middle">352 <tspan font-size="10" fill="#e10600" font-weight="800">KM/H</tspan></text>
 
-    <!-- Gear Box -->
-    <rect x="110" y="0" width="75" height="56" rx="8" fill="rgba(225,6,0,0.12)" stroke="rgba(225,6,0,0.5)"/>
+    <!-- Gear Box (Solid dark red tint background) -->
+    <rect x="110" y="0" width="75" height="56" rx="8" fill="#1c1115" stroke="rgba(225,6,0,0.5)" stroke-width="1"/>
     <text x="147" y="20" fill="#ff6b6b" font-family="monospace" font-size="9" font-weight="700" letter-spacing="1" text-anchor="middle">GEAR</text>
     <text x="147" y="44" fill="#ffffff" font-family="monospace" font-size="20" font-weight="900" text-anchor="middle">8</text>
 
-    <!-- DRS Box -->
-    <rect x="195" y="0" width="105" height="56" rx="8" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.4)"/>
+    <!-- DRS Box (Solid dark green tint background) -->
+    <rect x="195" y="0" width="105" height="56" rx="8" fill="#0d1c14" stroke="rgba(34,197,94,0.4)" stroke-width="1"/>
     <text x="247" y="20" fill="#4ade80" font-family="monospace" font-size="9" font-weight="700" letter-spacing="1" text-anchor="middle">DRS STATUS</text>
     <text x="247" y="44" fill="#22c55e" font-family="monospace" font-size="13" font-weight="900" text-anchor="middle">ENABLED ⚡</text>
 
     <!-- ERS Sub-Bar underneath boxes -->
-    <rect x="0" y="66" width="300" height="20" rx="4" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="0" y="66" width="300" height="20" rx="4" fill="#10121a" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
     <text x="150" y="80" fill="#94a3b8" font-family="monospace" font-size="9" font-weight="700" letter-spacing="1" text-anchor="middle">ERS: 98% • MGU-K: 350 KW • ACTIVE</text>
   </g>
 
