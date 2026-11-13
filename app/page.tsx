@@ -1,3 +1,4 @@
+import AboutSection from "../components/AboutSection";
 import CircuitsWorldSection from "../components/CircuitsWorldSection";
 import DriversSection from "../components/DriversSection";
 import FanZoneSection from "../components/FanZoneSection";
@@ -21,6 +22,7 @@ export default function HomePage() {
       <GarageSection />
       <FanZoneSection />
       <StrategySection />
+      <AboutSection />
       <Footer />
     </main>
   );

@@ -5191,6 +5191,344 @@ button {
 .pad-sub { font-size: 12px; color: var(--muted); }
 
 /* =========================================================
+   SECTION 09: ABOUT F1 FANVERSE & 2026 ARCHITECTURE
+========================================================= */
+.about-section {
+  position: relative;
+  border-top: 1px solid var(--line);
+  background: radial-gradient(circle at 50% 0%, rgba(225, 6, 0, 0.06), transparent 70%);
+}
+
+.about-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.about-kpi-card {
+  background: rgba(14, 16, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-kpi-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(225, 6, 0, 0.5);
+  box-shadow: 0 8px 24px rgba(225, 6, 0, 0.15);
+}
+
+.kpi-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+}
+
+.kpi-value {
+  font-family: var(--font-mono, monospace);
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.kpi-detail {
+  font-size: 11px;
+  color: #94a3b8;
+  line-height: 1.3;
+}
+
+/* 2026 Technical Regulations Block */
+.about-regulations-block {
+  background: rgba(13, 15, 22, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 36px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.about-regulations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-kicker {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.about-regulations-header h3 {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  margin: 4px 0 0;
+  color: #ffffff;
+}
+
+.pillar-selector-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pillar-pill {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pillar-pill:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.pillar-pill.is-active {
+  color: #ffffff;
+  background: var(--accent);
+  box-shadow: 0 0 14px rgba(225, 6, 0, 0.4);
+}
+
+.pillar-detail-card {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 24px;
+  align-items: center;
+}
+
+.pillar-badge {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.pillar-meta h4 {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.pillar-meta p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.pillar-metric-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pillar-metric-box span {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.pillar-metric-box strong {
+  font-family: var(--font-mono, monospace);
+  font-size: 16px;
+  font-weight: 900;
+  color: #ffd700;
+}
+
+.pillar-metric-box small {
+  font-size: 8px;
+  color: #64748b;
+  letter-spacing: 0.12em;
+}
+
+/* Technology Stack Section */
+.about-tech-section {
+  margin-bottom: 36px;
+}
+
+.about-tech-header {
+  margin-bottom: 20px;
+}
+
+.about-tech-header h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 4px 0 6px;
+}
+
+.about-tech-header p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.tech-stack-card {
+  background: rgba(14, 16, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tech-stack-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.tech-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.tech-icon {
+  font-size: 18px;
+}
+
+.tech-category {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.tech-stack-card h5 {
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+}
+
+.tech-stack-card p {
+  font-size: 11px;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Creed & Community Card */
+.about-creed-card {
+  background: linear-gradient(135deg, rgba(225, 6, 0, 0.12) 0%, rgba(14, 16, 23, 0.95) 100%);
+  border: 1px solid rgba(225, 6, 0, 0.4);
+  border-radius: 14px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.creed-badge {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.creed-content {
+  max-width: 680px;
+}
+
+.creed-content h4 {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.creed-content p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.creed-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meta-capsule {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+}
+
+.meta-capsule span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.meta-capsule strong {
+  color: #ffffff;
+}
+
+.meta-capsule .status-live {
+  color: #22c55e;
+}
+
+/* =========================================================
    FOOTER
 ========================================================= */
 .site-footer {
@@ -5433,6 +5771,19 @@ button {
   .calendar-controls-wrapper {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .pillar-detail-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-creed-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .creed-meta {
+    width: 100%;
   }
 
   .standings-table-head,

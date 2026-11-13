@@ -13,6 +13,7 @@ export const navItems: readonly NavItem[] = [
   { label: "CIRCUITS", href: "#circuits", id: "circuits" },
   { label: "GARAGE", href: "#garage", id: "garage" },
   { label: "FAN ZONE", href: "#fan-zone", id: "fan-zone" },
+  { label: "ABOUT", href: "#about", id: "about" },
 ] as const;
 
 export const heroTelemetry = [
