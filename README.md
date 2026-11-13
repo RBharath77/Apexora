@@ -231,19 +231,12 @@ npm run lint
 
 ## 👨‍💻 Author & Creator
 
-<p align="center">
-  <b>Designed & Built with ❤️ by <a href="https://github.com/RBharath77">Bharath R</a></b>
-</p>
+Designed & built with ❤️ by **[Bharath R](https://github.com/RBharath77)**.
 
-<p align="center">
-  <a href="https://github.com/RBharath77">
-    <img src="https://img.shields.io/badge/Created%20by-Bharath%20R-E10600?style=for-the-badge&logo=github&logoColor=white" alt="Created by Bharath R" />
-  </a>
-</p>
+[![Created by Bharath R](https://img.shields.io/badge/Created%20by-Bharath%20R-E10600?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RBharath77)
 
 ---
 
 ## 📄 License & Credits
-This project is an open fan project created for educational and community enjoyment. Formula 1, F1, and related marks are trademarks of Formula One Licensing B.V.
 
-*Created by **Bharath R**.*
+This project is an open fan project created for educational and community enjoyment. Formula 1, F1, and related marks are trademarks of Formula One Licensing B.V.
