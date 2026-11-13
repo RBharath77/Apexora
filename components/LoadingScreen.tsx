@@ -185,6 +185,13 @@ export default function LoadingScreen() {
       {/* Center Cluster with Title & Animated Progress */}
       <div className="loading-center-cluster">
         <div className="loading-mark">
+          <img
+            src="/images/apexora-icon.svg"
+            alt="APEXORA Logo"
+            width={44}
+            height={44}
+            className="loading-brand-icon"
+          />
           <span className="mark-f1">APEX</span>
           <span className="mark-text">ORA</span>
           <em className="mark-year">2026</em>

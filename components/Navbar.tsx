@@ -69,7 +69,15 @@ export default function Navbar() {
         onClick={() => {
           setMenuOpen(false);
         }}
+        aria-label="APEXORA Digital Command Center"
       >
+        <img
+          src="/images/apexora-icon.svg"
+          alt="APEXORA Crest"
+          width={26}
+          height={26}
+          className="brand-icon"
+        />
         <span className="brand-badge">APEX</span>
         <span>ORA</span>
       </a>

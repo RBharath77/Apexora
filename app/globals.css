@@ -667,6 +667,32 @@ button {
   letter-spacing: 0.14em;
 }
 
+.brand-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(225, 6, 0, 0.45));
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.brand:hover .brand-icon {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.loading-brand-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 16px rgba(225, 6, 0, 0.6));
+}
+
 .brand-badge {
   display: inline-grid;
   place-items: center;

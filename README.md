@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="public/images/apexora-logo.svg" alt="APEXORA Logo" width="380" />
+</p>
+
+<p align="center">
   <img src="public/images/readme-banner.svg" alt="Apexora Telemetry Banner" width="100%" />
 </p>
 
@@ -40,6 +44,10 @@
 ---
 
 ## 🏎️ About APEXORA
+
+<p align="center">
+  <img src="public/images/apexora-crest.jpg" alt="APEXORA 2026 Racing Crest" width="460" />
+</p>
 
 **APEXORA** is an open, high-performance, ad-free digital command center celebrating the speed, aerodynamics, and engineering marvel of **Formula 1's 2026 Season**.
 

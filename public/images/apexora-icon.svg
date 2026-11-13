@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0c13" />
+      <stop offset="50%" stop-color="#121420" />
+      <stop offset="100%" stop-color="#07080d" />
+    </linearGradient>
+
+    <!-- Crimson Neon Red Gradient -->
+    <linearGradient id="apexRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b30" />
+      <stop offset="50%" stop-color="#e10600" />
+      <stop offset="100%" stop-color="#b30000" />
+    </linearGradient>
+
+    <!-- Titanium Silver Gradient -->
+    <linearGradient id="apexTitanium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Dark Carbon Gradient -->
+    <linearGradient id="apexCarbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2d3d" />
+      <stop offset="100%" stop-color="#151722" />
+    </linearGradient>
+
+    <!-- Subtle Red Core Glow -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e10600" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#e10600" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#e10600" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Glow Filter -->
+    <filter id="logoGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Badge Base -->
+  <rect x="12" y="12" width="488" height="488" rx="104" fill="url(#bgGrad)" stroke="#222536" stroke-width="4"/>
+  <rect x="12" y="12" width="488" height="488" rx="104" fill="url(#coreGlow)"/>
+
+  <!-- Inner High-Tech Perimeter Border -->
+  <rect x="28" y="28" width="456" height="456" rx="88" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="2"/>
+
+  <!-- Top Speed Accent Lines -->
+  <g opacity="0.8">
+    <path d="M 370 70 L 415 70 L 395 105 L 350 105 Z" fill="url(#apexRed)"/>
+    <path d="M 405 70 L 435 70 L 415 105 L 385 105 Z" fill="#ffffff" opacity="0.4"/>
+  </g>
+
+  <!-- Central APEXORA Monogram Icon -->
+  <g filter="url(#logoGlow)">
+    <!-- Left Wing Blade of "A" (Slanted Titanium Strut) -->
+    <path d="M 232 95 
+             L 280 95 
+             L 190 395 
+             L 130 395 
+             Z" 
+          fill="url(#apexTitanium)"/>
+
+    <!-- Right Wing Blade of "A" (Aerodynamic Crimson Sweep) -->
+    <path d="M 256 95 
+             L 304 95 
+             L 382 395 
+             L 322 395 
+             Z" 
+          fill="url(#apexRed)"/>
+
+    <!-- Apex Aerodynamic Horizontal Crossbar & Venturi Winglet -->
+    <path d="M 172 265 
+             L 348 265 
+             L 362 305 
+             L 158 305 
+             Z" 
+          fill="url(#apexCarbon)" 
+          stroke="rgba(255, 255, 255, 0.2)" 
+          stroke-width="1.5"/>
+
+    <!-- Inner Red Chevron Insert in the Crossbar -->
+    <polygon points="220,275 292,275 278,295 206,295" fill="url(#apexRed)"/>
+
+    <!-- Top Apex Convergence Cap -->
+    <polygon points="244,95 268,95 256,135" fill="#ffffff"/>
+  </g>
+
+  <!-- Lower FIA Racing Red Tri-Stripe Indicator -->
+  <g transform="translate(186, 425)">
+    <rect x="0" y="0" width="36" height="6" rx="3" fill="#e10600"/>
+    <rect x="44" y="0" width="52" height="6" rx="3" fill="#ffffff" opacity="0.9"/>
+    <rect x="104" y="0" width="36" height="6" rx="3" fill="#e10600"/>
+  </g>
+</svg>

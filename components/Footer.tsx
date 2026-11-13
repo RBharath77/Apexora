@@ -7,6 +7,13 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-brand">
         <strong>
+          <img
+            src="/images/apexora-icon.svg"
+            alt="APEXORA Logo"
+            width={24}
+            height={24}
+            className="brand-icon"
+          />
           <span className="brand-badge">APEX</span> ORA
         </strong>
         <span>BUILT FOR THE FANS. BUILT FOR THE LOVE OF RACING.</span>
